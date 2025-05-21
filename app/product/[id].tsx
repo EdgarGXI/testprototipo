@@ -37,7 +37,7 @@ const PRODUCT_DATA = {
     title: "MacBook Pro 2021",
     price: 1200,
     description:
-      "MacBook Pro 2021, M1 Pro chip, 16GB RAM, 512GB SSD. Barely used, in perfect condition with original box and accessories.",
+      "MacBook Pro 2021, M1 Pro chip, 16GB RAM, 16GB RAM, 512GB SSD. Barely used, in perfect condition with original box and accessories.",
     condition: "Like New",
     images: [
       "/placeholder.svg?height=400&width=400",
@@ -95,12 +95,7 @@ export default function ProductDetailScreen() {
             style={styles.backButton}
             onPress={() => router.back()}
           >
-            <IconSymbol
-              name="chevron.right"
-              size={24}
-              color="#FFFFFF"
-              style={{ transform: [{ rotate: "180deg" }] }}
-            />
+            <IconSymbol name="arrow.left" size={24} color="#FFFFFF" />
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -108,7 +103,7 @@ export default function ProductDetailScreen() {
             onPress={() => setIsSaved(!isSaved)}
           >
             <IconSymbol
-              name="house.fill"
+              name={isSaved ? "heart.fill" : "heart"}
               size={24}
               color={isSaved ? "#FF3B30" : "#FFFFFF"}
             />
@@ -140,21 +135,21 @@ export default function ProductDetailScreen() {
 
           <ThemedView style={styles.infoRow}>
             <ThemedView style={styles.infoItem}>
-              <IconSymbol name="house.fill" size={16} color="#6E6E6E" />
+              <IconSymbol name="tag.fill" size={16} color="#6E6E6E" />
               <ThemedText style={styles.infoText}>
                 {product.condition}
               </ThemedText>
             </ThemedView>
 
             <ThemedView style={styles.infoItem}>
-              <IconSymbol name="house.fill" size={16} color="#6E6E6E" />
+              <IconSymbol name="mappin.and.ellipse" size={16} color="#6E6E6E" />
               <ThemedText style={styles.infoText}>
                 {product.location}
               </ThemedText>
             </ThemedView>
 
             <ThemedView style={styles.infoItem}>
-              <IconSymbol name="house.fill" size={16} color="#6E6E6E" />
+              <IconSymbol name="calendar" size={16} color="#6E6E6E" />
               <ThemedText style={styles.infoText}>
                 Posted {product.postedDate}
               </ThemedText>
@@ -182,7 +177,7 @@ export default function ProductDetailScreen() {
                   {product.seller.name}
                 </ThemedText>
                 <ThemedView style={styles.ratingContainer}>
-                  <IconSymbol name="house.fill" size={16} color="#FFD700" />
+                  <IconSymbol name="star.fill" size={16} color="#FFD700" />
                   <ThemedText style={styles.ratingText}>
                     {product.seller.rating}
                   </ThemedText>

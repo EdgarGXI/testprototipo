@@ -115,7 +115,7 @@ export default function SearchScreen() {
       <ThemedView style={styles.header}>
         <ThemedText type="title">Search</ThemedText>
         <TouchableOpacity style={styles.filterButton}>
-          <IconSymbol name="house.fill" size={20} color="#5E17EB" />
+          <IconSymbol name="slider.horizontal.3" size={20} color="#5E17EB" />
           <ThemedText style={styles.filterText}>Filters</ThemedText>
         </TouchableOpacity>
       </ThemedView>
@@ -124,7 +124,9 @@ export default function SearchScreen() {
         placeholder="Search for items..."
         value={searchQuery}
         onChangeText={setSearchQuery}
-        leftIcon={<IconSymbol name="house.fill" size={20} color="#6E6E6E" />}
+        leftIcon={
+          <IconSymbol name="magnifyingglass" size={20} color="#6E6E6E" />
+        }
         style={styles.searchInput}
       />
 

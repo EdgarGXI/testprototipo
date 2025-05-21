@@ -40,7 +40,7 @@ export default function ForgotPasswordScreen() {
             style={styles.backButton}
             onPress={() => router.back()}
           >
-            <IconSymbol name="chevron.right" size={24} color="#5E17EB" />
+            <IconSymbol name="arrow.left" size={24} color="#5E17EB" />
           </TouchableOpacity>
 
           <ThemedView style={styles.logoContainer}>
@@ -70,7 +70,7 @@ export default function ForgotPasswordScreen() {
               keyboardType="email-address"
               autoCapitalize="none"
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="envelope.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />

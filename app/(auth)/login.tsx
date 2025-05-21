@@ -61,7 +61,7 @@ export default function LoginScreen() {
               keyboardType="email-address"
               autoCapitalize="none"
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="envelope.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />
@@ -72,7 +72,7 @@ export default function LoginScreen() {
               onChangeText={setPassword}
               secureTextEntry
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="lock.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />
@@ -95,13 +95,25 @@ export default function LoginScreen() {
 
             <ThemedView style={styles.socialButtons}>
               <TouchableOpacity style={styles.socialButton}>
-                <IconSymbol name="house.fill" size={24} color="#4285F4" />
+                <IconSymbol
+                  name="person.crop.circle"
+                  size={24}
+                  color="#4285F4"
+                />
               </TouchableOpacity>
               <TouchableOpacity style={styles.socialButton}>
-                <IconSymbol name="house.fill" size={24} color="#3b5998" />
+                <IconSymbol
+                  name="person.crop.circle"
+                  size={24}
+                  color="#3b5998"
+                />
               </TouchableOpacity>
               <TouchableOpacity style={styles.socialButton}>
-                <IconSymbol name="house.fill" size={24} color="#000000" />
+                <IconSymbol
+                  name="person.crop.circle"
+                  size={24}
+                  color="#000000"
+                />
               </TouchableOpacity>
             </ThemedView>
 

@@ -102,7 +102,9 @@ export default function MessagesScreen() {
         placeholder="Search messages..."
         value={searchQuery}
         onChangeText={setSearchQuery}
-        leftIcon={<IconSymbol name="house.fill" size={20} color="#6E6E6E" />}
+        leftIcon={
+          <IconSymbol name="magnifyingglass" size={20} color="#6E6E6E" />
+        }
         style={styles.searchInput}
       />
 

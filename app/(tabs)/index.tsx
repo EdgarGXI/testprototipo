@@ -17,12 +17,12 @@ import { ProductCard } from "@/components/ui/ProductCard";
 import { TextInput } from "@/components/ui/TextInput";
 
 const CATEGORIES = [
-  { id: "1", name: "Textbooks", icon: "house.fill" },
-  { id: "2", name: "Electronics", icon: "house.fill" },
-  { id: "3", name: "Furniture", icon: "house.fill" },
-  { id: "4", name: "Clothing", icon: "house.fill" },
-  { id: "5", name: "Tickets", icon: "house.fill" },
-  { id: "6", name: "Services", icon: "house.fill" },
+  { id: "1", name: "Textbooks", icon: "book.fill" },
+  { id: "2", name: "Electronics", icon: "deskcomputer" },
+  { id: "3", name: "Furniture", icon: "chair.fill" },
+  { id: "4", name: "Clothing", icon: "tshirt.fill" },
+  { id: "5", name: "Tickets", icon: "ticket.fill" },
+  { id: "6", name: "Services", icon: "wrench.fill" },
 ];
 
 const FEATURED_PRODUCTS = [
@@ -106,7 +106,7 @@ export default function HomeScreen() {
       <ScrollView showsVerticalScrollIndicator={false}>
         <ThemedView style={styles.header}>
           <ThemedView style={styles.locationContainer}>
-            <IconSymbol name="house.fill" size={20} color="#5E17EB" />
+            <IconSymbol name="mappin.and.ellipse" size={20} color="#5E17EB" />
             <ThemedText style={styles.locationText}>
               Stanford University
             </ThemedText>
@@ -119,7 +119,7 @@ export default function HomeScreen() {
           </ThemedView>
 
           <TouchableOpacity style={styles.notificationButton}>
-            <IconSymbol name="house.fill" size={24} color="#5E17EB" />
+            <IconSymbol name="bell.fill" size={24} color="#5E17EB" />
           </TouchableOpacity>
         </ThemedView>
 
@@ -127,7 +127,9 @@ export default function HomeScreen() {
           placeholder="Search for items..."
           value={searchQuery}
           onChangeText={setSearchQuery}
-          leftIcon={<IconSymbol name="house.fill" size={20} color="#6E6E6E" />}
+          leftIcon={
+            <IconSymbol name="magnifyingglass" size={20} color="#6E6E6E" />
+          }
           style={styles.searchInput}
         />
 

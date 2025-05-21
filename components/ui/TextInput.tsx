@@ -24,14 +24,14 @@ export function TextInput({
   const placeholderColor = "#9E9E9E";
 
   return (
-    <View style={[styles.container, { backgroundColor: "#F5F5F5" }, style]}>
+    <View style={[styles.container, { backgroundColor: "#F5F5F5" }]}>
       {leftIcon && <View style={styles.leftIcon}>{leftIcon}</View>}
       <RNTextInput
         style={[
           styles.input,
           { color: textColor },
-          leftIcon && styles.inputWithLeftIcon,
-          rightIcon && styles.inputWithRightIcon,
+          leftIcon ? styles.inputWithLeftIcon : undefined,
+          rightIcon ? styles.inputWithRightIcon : undefined,
         ]}
         placeholderTextColor={placeholderColor}
         {...props}

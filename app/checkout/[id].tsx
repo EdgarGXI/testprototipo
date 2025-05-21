@@ -29,9 +29,9 @@ const PRODUCT_DATA = {
 };
 
 const PAYMENT_METHODS = [
-  { id: "card", name: "Credit Card", icon: "house.fill" },
-  { id: "paypal", name: "PayPal", icon: "house.fill" },
-  { id: "venmo", name: "Venmo", icon: "house.fill" },
+  { id: "card", name: "Credit Card", icon: "creditcard.fill" },
+  { id: "paypal", name: "PayPal", icon: "dollarsign.circle.fill" },
+  { id: "venmo", name: "Venmo", icon: "banknote.fill" },
 ];
 
 export default function CheckoutScreen() {
@@ -63,12 +63,7 @@ export default function CheckoutScreen() {
           style={styles.backButton}
           onPress={() => router.back()}
         >
-          <IconSymbol
-            name="chevron.right"
-            size={24}
-            color="#5E17EB"
-            style={{ transform: [{ rotate: "180deg" }] }}
-          />
+          <IconSymbol name="arrow.left" size={24} color="#5E17EB" />
         </TouchableOpacity>
         <ThemedText type="title">Checkout</ThemedText>
         <ThemedView style={{ width: 24 }} />
@@ -121,7 +116,7 @@ export default function CheckoutScreen() {
               ]}
               onPress={() => setSelectedPayment(method.id)}
             >
-              <IconSymbol name={method.icon} size={24} color="#5E17EB" />
+              <IconSymbol name={method.icon as any} size={24} color="#5E17EB" />
               <ThemedText style={styles.paymentText}>{method.name}</ThemedText>
 
               <ThemedView style={styles.radioButton}>

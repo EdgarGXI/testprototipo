@@ -10,13 +10,13 @@ import { IconSymbol } from "@/components/ui/IconSymbol";
 import { useAuth } from "../context/auth-context";
 
 const MENU_ITEMS = [
-  { id: "listings", title: "My Listings", icon: "house.fill" },
-  { id: "purchases", title: "My Purchases", icon: "house.fill" },
-  { id: "saved", title: "Saved Items", icon: "house.fill" },
-  { id: "reviews", title: "Reviews", icon: "house.fill" },
-  { id: "payments", title: "Payment Methods", icon: "house.fill" },
-  { id: "settings", title: "Settings", icon: "house.fill" },
-  { id: "help", title: "Help & Support", icon: "house.fill" },
+  { id: "listings", title: "My Listings", icon: "tag.fill" },
+  { id: "purchases", title: "My Purchases", icon: "bag.fill" },
+  { id: "saved", title: "Saved Items", icon: "heart.fill" },
+  { id: "reviews", title: "Reviews", icon: "star.fill" },
+  { id: "payments", title: "Payment Methods", icon: "creditcard.fill" },
+  { id: "settings", title: "Settings", icon: "gearshape.fill" },
+  { id: "help", title: "Help & Support", icon: "questionmark.circle.fill" },
 ];
 
 export default function ProfileScreen() {
@@ -33,7 +33,7 @@ export default function ProfileScreen() {
         <ThemedView style={styles.header}>
           <ThemedText type="title">Profile</ThemedText>
           <TouchableOpacity>
-            <IconSymbol name="house.fill" size={24} color="#5E17EB" />
+            <IconSymbol name="gearshape.fill" size={24} color="#5E17EB" />
           </TouchableOpacity>
         </ThemedView>
 
@@ -89,7 +89,7 @@ export default function ProfileScreen() {
               }}
             >
               <ThemedView style={styles.menuItemLeft}>
-                <IconSymbol name={item.icon} size={24} color="#5E17EB" />
+                <IconSymbol name="plus.circle.fill" size={24} color="#5E17EB" />
                 <ThemedText style={styles.menuItemText}>
                   {item.title}
                 </ThemedText>

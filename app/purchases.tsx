@@ -11,7 +11,7 @@ export default function OrderConfirmationScreen() {
     <ThemedView style={styles.container}>
       <ThemedView style={styles.content}>
         <ThemedView style={styles.iconContainer}>
-          <IconSymbol name="house.fill" size={60} color="#5E17EB" />
+          <IconSymbol name="arrow.left" size={60} color="#5E17EB" />
         </ThemedView>
 
         <ThemedText type="title" style={styles.title}>

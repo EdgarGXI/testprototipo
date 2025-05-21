@@ -51,7 +51,7 @@ export default function CreateListingScreen() {
 
         <ThemedView style={styles.imageSection}>
           <TouchableOpacity style={styles.addImageButton}>
-            <IconSymbol name="house.fill" size={32} color="#5E17EB" />
+            <IconSymbol name="camera.fill" size={32} color="#5E17EB" />
             <ThemedText style={styles.addImageText}>Add Photos</ThemedText>
             <ThemedText style={styles.imageLimit}>(Up to 5 photos)</ThemedText>
           </TouchableOpacity>
@@ -62,10 +62,10 @@ export default function CreateListingScreen() {
             style={styles.previewScroll}
           >
             <ThemedView style={styles.imagePlaceholder}>
-              <IconSymbol name="house.fill" size={24} color="#CCCCCC" />
+              <IconSymbol name="photo.fill" size={24} color="#CCCCCC" />
             </ThemedView>
             <ThemedView style={styles.imagePlaceholder}>
-              <IconSymbol name="house.fill" size={24} color="#CCCCCC" />
+              <IconSymbol name="photo.fill" size={24} color="#CCCCCC" />
             </ThemedView>
           </ScrollView>
         </ThemedView>

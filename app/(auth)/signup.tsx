@@ -41,7 +41,7 @@ export default function SignupScreen() {
             style={styles.backButton}
             onPress={() => router.back()}
           >
-            <IconSymbol name="chevron.right" size={24} color="#5E17EB" />
+            <IconSymbol name="arrow.left" size={24} color="#5E17EB" />
           </TouchableOpacity>
 
           <ThemedView style={styles.logoContainer}>
@@ -68,7 +68,7 @@ export default function SignupScreen() {
               value={name}
               onChangeText={setName}
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="person.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />
@@ -80,7 +80,7 @@ export default function SignupScreen() {
               keyboardType="email-address"
               autoCapitalize="none"
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="envelope.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />
@@ -91,7 +91,7 @@ export default function SignupScreen() {
               onChangeText={setPassword}
               secureTextEntry
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="lock.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />
@@ -101,7 +101,7 @@ export default function SignupScreen() {
               value={university}
               onChangeText={setUniversity}
               leftIcon={
-                <IconSymbol name="house.fill" size={20} color="#6E6E6E" />
+                <IconSymbol name="book.fill" size={20} color="#6E6E6E" />
               }
               style={styles.input}
             />

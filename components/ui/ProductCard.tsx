@@ -32,7 +32,7 @@ export function ProductCard({ product, onPress, style }: ProductCardProps) {
         <ThemedText style={styles.price}>${product.price}</ThemedText>
 
         <ThemedView style={styles.ratingContainer}>
-          <IconSymbol name="house.fill" size={14} color="#FFD700" />
+          <IconSymbol name="star.fill" size={14} color="#FFD700" />
           <ThemedText style={styles.rating}>{product.rating}</ThemedText>
         </ThemedView>
 
